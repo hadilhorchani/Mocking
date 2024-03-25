@@ -25,3 +25,21 @@ class OpinionExchange {
         } else {
             console.log(`"${objectName}" does not exist in the Opinion Exchange.`);
             showNotification(`"${objectName}" does not exist in the Opinion Exchange.`, 'error');
+        }
+    }
+
+    // Async function to fetch opinions from JSON file
+    async fetchOpinions() {
+        const response = await fetch('opinions.json');
+        const data = await response.json();
+        return data.opinions;
+    }
+}
+
+// Create an instance of OpinionExchange
+const opinionExchange = new OpinionExchange();
+
+// Example usage of fetchOpinions
+opinionExchange.fetchOpinions().then(opinions => {
+    console.log(opinions); // This will log the opinions fetched from the JSON file
+});
