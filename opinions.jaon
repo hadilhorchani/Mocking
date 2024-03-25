@@ -1,0 +1,16 @@
+{
+  "opinions": [
+    {
+      "objectName": "Object1",
+      "opinion": "This is a test opinion"
+    },
+    {
+      "objectName": "Object2",
+      "opinion": "Another test opinion"
+    },
+    {
+      "objectName": "Object3",
+      "opinion": "Yet another test opinion"
+    }
+  ]
+}
