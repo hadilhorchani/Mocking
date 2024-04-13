@@ -1,7 +1,7 @@
-const OpinionExchange = require('./OpinionExchange');
+const OpinionExchange = require('./script');
 const { addOpinion } = require('./script');
 
-jest.mock('./OpinionExchange');
+jest.mock('./script');
 
 describe('addOpinion', () => {
   test('adds opinion correctly', () => {
